@@ -56,13 +56,43 @@
         <article>
           <h3>Send a Message</h3>
           <form action="#" method="get">
-            <label for="name">Name:</label><br />
-            <input type="text" id="name" name="name" required /><br /><br />
+            <label for="name">Full Name:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              required
+            /><br /><br />
 
-            <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" required /><br /><br />
+            <label for="email">Email Address:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="john@example.com"
+              required
+            /><br /><br />
 
-            <input type="submit" value="Send" />
+            <label for="subject">Subject:</label><br />
+            <select id="subject" name="subject" class="form-select">
+              <option value="job">Job Opportunity</option>
+              <option value="freelance">Freelance Project</option>
+              <option value="networking">Networking</option>
+              <option value="other">Other</option></select
+            ><br /><br />
+
+            <label for="message">Your Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message here..."
+              required
+            ></textarea
+            ><br /><br />
+
+            <input type="submit" value="Send Message" />
           </form>
         </article>
       </section>
